@@ -1,0 +1,16 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÑüÜûÿÿÿÿ8¨¾êª÷1
+£
+java:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›âÊ‰şÿÿÿÿ8¼¾êª÷1
+
+java:S1186&"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ñë¹8½¾êª÷1
+£
+java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ßÁ—İşÿÿÿÿ8½¾êª÷1
+£
+java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ñ§ëÙıÿÿÿÿ8½¾êª÷1
+X
+java:S1874"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8×¾êª÷1
+T
+java:S1874"7Remove this use of "pageLoadTimeout"; it is deprecated.(¤Ñ¥¥8Ù¾êª÷1
+Q
+java:S1128"4Remove this unused import 'io.cucumber.java.Before'.(£½”Ü8á¾êª÷1

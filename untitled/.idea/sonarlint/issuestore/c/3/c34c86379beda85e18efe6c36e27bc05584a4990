@@ -1,0 +1,9 @@
+
+m
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(¯Ë•Âøÿÿÿÿ8ÍèúÑ÷1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Œ¾İ¯ùÿÿÿÿ8ÎèúÑ÷1
+C	java:S131""Add a default case to this switch.(¯Ë•Âøÿÿÿÿ8ãèúÑ÷1
+i
+java:S1128"LRemove this unused import 'io.appium.java_client.pagefactory.AndroidFindBy'.(šÕâŸ8ˆÄüÑ÷1
+d
+java:S1128"BRemove this unused import 'net.serenitybdd.core.pages.PageObject'.(’•Ì›úÿÿÿÿ8ÉÕ¥Ò÷1

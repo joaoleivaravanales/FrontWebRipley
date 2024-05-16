@@ -1,19 +1,24 @@
 
-n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÑüÜûÿÿÿÿ8¹ÍÕü÷1
-L	java:S106!"+Replace this use of System.out by a logger.(÷‘’¶üÿÿÿÿ8•ÍÓı÷1
-]	java:S125'"<This block of commented-out lines of code should be removed.(î½Ü‚ÿÿÿÿÿ8¼¹Ôı÷1
-L	java:S106,"+Replace this use of System.out by a logger.(ã™†€úÿÿÿÿ8˜ÍÓı÷1
-L	java:S1061"+Replace this use of System.out by a logger.(ŠÓÛ±ùÿÿÿÿ8›ÍÓı÷1
-G	java:S1063"+Replace this use of System.out by a logger.(¼®¬Å8›ÍÓı÷1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÑüÜûÿÿÿÿ8Âİ¨•ø1
+L	java:S106"+Replace this use of System.out by a logger.(÷‘’¶üÿÿÿÿ8áİ¨•ø1
+U
+java:S1128"3Remove this unused import 'io.cucumber.java.After'.(Äø¥ùÿÿÿÿ8›±§–ø1
 Q
-java:S1128"4Remove this unused import 'io.cucumber.java.Before'.(£½”Ü8Ëè×ı÷1
+java:S1128"4Remove this unused import 'io.cucumber.java.Before'.(£½”Ü8›±§–ø1
 Q
-java:S1128"5Remove this unused import 'io.cucumber.java.en.Then'.(çÊ{8Á¹Ôı÷1
+java:S1128"4Remove this unused import 'io.cucumber.java.en.And'.(”ô—É8œ±§–ø1
+Q
+java:S1128"5Remove this unused import 'io.cucumber.java.en.Then'.(çÊ{8œ±§–ø1
 P
-java:S1128	"3Remove this unused import 'org.openqa.selenium.By'.(ÿŠŞ›8Â¹Ôı÷1
-]
-java:S1128";Remove this unused import 'org.openqa.selenium.WebElement'.(‰ïµ”şÿÿÿÿ8Â¹Ôı÷1
-a
-java:S1128"?Remove this unused import 'org.openqa.selenium.support.FindBy'.(¶º´éùÿÿÿÿ8Â¹Ôı÷1
+java:S1128	"3Remove this unused import 'org.openqa.selenium.By'.(ÿŠŞ›8œ±§–ø1
 W
-java:S1128":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş8Â¹Ôı÷1
+java:S1128
+":Remove this unused import 'org.openqa.selenium.WebDriver'.(ñšÿÀ8ÖªÁ–ø1
+]
+java:S1128";Remove this unused import 'org.openqa.selenium.WebElement'.(‰ïµ”şÿÿÿÿ8œ±§–ø1
+`
+java:S1128"DRemove this unused import 'org.openqa.selenium.chrome.ChromeDriver'.(†È8±§–ø1
+a
+java:S1128"?Remove this unused import 'org.openqa.selenium.support.FindBy'.(¶º´éùÿÿÿÿ8±§–ø1
+W
+java:S1128":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş8±§–ø1

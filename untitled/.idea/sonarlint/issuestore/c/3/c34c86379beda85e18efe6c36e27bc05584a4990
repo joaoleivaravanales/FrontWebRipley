@@ -1,18 +1,13 @@
 
 m
-java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(¯Ë•Âøÿÿÿÿ8öñ˜ý÷1
-n	java:S101
-"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Œ¾Ý¯ùÿÿÿÿ8¢ÛÑý÷1
-]	java:S125"<This block of commented-out lines of code should be removed.(±øÓ—ýÿÿÿÿ8›À™ý÷1
-C	java:S131""Add a default case to this switch.(¯Ë•Âøÿÿÿÿ8‹ò˜ý÷1
-G	java:S106"+Replace this use of System.out by a logger.(ôáÚä8ƒ»£ý÷1
-]	java:S125"<This block of commented-out lines of code should be removed.(Ó¾ä­üÿÿÿÿ8Œò˜ý÷1
-X	java:S125"<This block of commented-out lines of code should be removed.(©íá8õú³ý÷1
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(¯Ë•Âøÿÿÿÿ8í×¼–ø1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Œ¾Ý¯ùÿÿÿÿ8ï×¼–ø1
+C	java:S131""Add a default case to this switch.(¯Ë•Âøÿÿÿÿ8‡Ø¼–ø1
+G	java:S106"+Replace this use of System.out by a logger.(ôáÚä8ŠØ¼–ø1
+]	java:S125"<This block of commented-out lines of code should be removed.(Ó¾ä­üÿÿÿÿ8Ø¼–ø1
+X	java:S125"<This block of commented-out lines of code should be removed.(©íá8Ø¼–ø1
+X	java:S125"<This block of commented-out lines of code should be removed.(ò¦‚Ð8‘Ø¼–ø1
 d
-java:S1128"BRemove this unused import 'net.serenitybdd.core.pages.PageObject'.(’•Ì›úÿÿÿÿ8¯¢Íý÷1
-P
-java:S1128"3Remove this unused import 'org.openqa.selenium.By'.(ÿŠÞ›8°¢Íý÷1
-W
-java:S1128":Remove this unused import 'org.openqa.selenium.WebDriver'.(ñšÿÀ8°¢Íý÷1
-N
-java:S1128",Remove this unused import 'step.stepRipley'.(¦ÍÅþýÿÿÿÿ8¶ÛÑý÷1
+java:S1128"BRemove this unused import 'net.serenitybdd.core.pages.PageObject'.(’•Ì›úÿÿÿÿ8¿íÐ–ø1
+`
+java:S1128"CRemove this unused import 'net.serenitybdd.core.pages.PageObjects'.(„¦‡Ê8ŸÊ–ø1

@@ -7,3 +7,7 @@ R
 "src/main/java/run/CucumberRun.java,1\9\1900d769747e5b4638bbc267c8b6bef369a25f08
 S
 #src/main/java/pages/ripleyHome.java,c\3\c34c86379beda85e18efe6c36e27bc05584a4990
+N
+src/main/java/pages/hooks.java,7\3\737bab0a24bbee475a841cbf717bdb7158235e69
+W
+'src/main/java/pages/abrirNavegador.java,8\8\88b4e7faf9ea557f53e4c9442d058860833f5fa1

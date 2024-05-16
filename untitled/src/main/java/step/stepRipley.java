@@ -17,10 +17,11 @@ import java.util.concurrent.TimeUnit;
 
 public class stepRipley {
 
-    WebDriver driver = new ChromeDriver();
+
     ripleyHome ripley = new ripleyHome();
 
     public void abrirNavegadorURL() {
+        WebDriver driver = new ChromeDriver();
         System.setProperty("webdriver.chrome.driver", "C:/Users/Jooao/Desktop/Joao/Front automatizacion web/untitled/src/main/resources/drivers/chromedriver.exe");
         driver.manage().window().maximize();
         driver.get("https://simple.ripley.cl/");
@@ -35,7 +36,7 @@ public class stepRipley {
 
     @After
     public void cerrarNavegador() {
-        driver.quit();
+        //driver.quit();
     }
 
     @When("Valido que efectivamente me encuentro en el menu de ripley")

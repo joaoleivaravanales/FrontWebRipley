@@ -1,6 +1,7 @@
 package step;
 
 import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -15,17 +16,15 @@ import pages.ripleyHome;
 import java.util.concurrent.TimeUnit;
 
 public class stepRipley {
-    WebDriver driver = null;
+
+    WebDriver driver = new ChromeDriver();
     ripleyHome ripley = new ripleyHome();
 
     public void abrirNavegadorURL() {
         System.setProperty("webdriver.chrome.driver", "C:/Users/Jooao/Desktop/Joao/Front automatizacion web/untitled/src/main/resources/drivers/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
         driver.manage().window().maximize();
+        driver.get("https://simple.ripley.cl/");
     }
-
 
     @Given("Cuando ingreso a la pagina de Ripley")
     public void cuandoIngresoALaPaginaDeRipley() {
@@ -36,17 +35,18 @@ public class stepRipley {
 
     @After
     public void cerrarNavegador() {
-        //driver.quit();
+        driver.quit();
     }
 
     @When("Valido que efectivamente me encuentro en el menu de ripley")
     public void validoQueEfectivamenteMeEncuentroEnElMenuDeRipley() {
-        driver.navigate().to("https://simple.ripley.cl/");
+        System.out.println("entro 2");
     }
 
     @And("Selecciono la opcion de {string} en la parte superior de la Pagina")
     public void seleccionoLaOpcionDeEnLaParteSuperiorDeLaPagina(String arg0) {
-        WebElement elemento = driver.findElement(By.xpath("//*[@id=\"ripley-sticky-header\"]/section/nav/div/div[2]/div[1]/div/div/a/div/div/span"));
-        elemento.click();
+        System.out.println("entro 3");
+        ripley.textosPagina(arg0);
+        System.out.println("salida del 3");
     }
 }

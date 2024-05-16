@@ -1,12 +1,18 @@
 
-n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÑüÜûÿÿÿÿ8¢àñ÷1
-S
-java:S1874"6Remove this use of "implicitlyWait"; it is deprecated.(îÖü8¸¸‘ñ÷1
-Y
-java:S1874"7Remove this use of "pageLoadTimeout"; it is deprecated.(Ù¦ ­ıÿÿÿÿ8»¸‘ñ÷1
-L	java:S106!"+Replace this use of System.out by a logger.(÷‘’¶üÿÿÿÿ8¾àñ÷1
-]	java:S125'"<This block of commented-out lines of code should be removed.(î½Ü‚ÿÿÿÿÿ8¿àñ÷1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÑüÜûÿÿÿÿ8¹ÍÕü÷1
+L	java:S106 "+Replace this use of System.out by a logger.(÷‘’¶üÿÿÿÿ8„ÎÕü÷1
+L	java:S106+"+Replace this use of System.out by a logger.(ã™†€úÿÿÿÿ8ˆÎÕü÷1
+L	java:S1060"+Replace this use of System.out by a logger.(ŠÓÛ±ùÿÿÿÿ8‹ÎÕü÷1
+G	java:S1062"+Replace this use of System.out by a logger.(¼®¬Å8ä¢ıü÷1
 Q
-java:S1128"5Remove this unused import 'io.cucumber.java.en.Then'.(çÊ{8Ãàñ÷1
+java:S1128"4Remove this unused import 'io.cucumber.java.Before'.(£½”Ü8“šíü÷1
+Q
+java:S1128"5Remove this unused import 'io.cucumber.java.en.Then'.(çÊ{8“šíü÷1
+P
+java:S1128	"3Remove this unused import 'org.openqa.selenium.By'.(ÿŠŞ›8”šíü÷1
+]
+java:S1128";Remove this unused import 'org.openqa.selenium.WebElement'.(‰ïµ”şÿÿÿÿ8”šíü÷1
 a
-java:S1128"?Remove this unused import 'org.openqa.selenium.support.FindBy'.(¶º´éùÿÿÿÿ8Äàñ÷1
+java:S1128"?Remove this unused import 'org.openqa.selenium.support.FindBy'.(¶º´éùÿÿÿÿ8”šíü÷1
+W
+java:S1128":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş8”šíü÷1

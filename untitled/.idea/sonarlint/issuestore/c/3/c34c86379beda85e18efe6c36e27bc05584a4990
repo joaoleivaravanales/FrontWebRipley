@@ -1,7 +1,16 @@
 
 m
-java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(¯Ë•Âøÿÿÿÿ8ÍèúÑ÷1
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(…×Êı8ÎèúÑ÷1
-C	java:S131""Add a default case to this switch.(¯Ë•Âøÿÿÿÿ8ãèúÑ÷1
-i
-java:S1128"LRemove this unused import 'io.appium.java_client.pagefactory.AndroidFindBy'.(šÕâŸ8ˆÄüÑ÷1
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(¯Ë•Âøÿÿÿÿ8öñ˜ı÷1
+n	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Œ¾İ¯ùÿÿÿÿ8øñ˜ı÷1
+]	java:S125
+"<This block of commented-out lines of code should be removed.(±øÓ—ıÿÿÿÿ8›À™ı÷1
+C	java:S131""Add a default case to this switch.(¯Ë•Âøÿÿÿÿ8‹ò˜ı÷1
+G	java:S106"+Replace this use of System.out by a logger.(ôáÚä8ƒ»£ı÷1
+]	java:S125"<This block of commented-out lines of code should be removed.(Ó¾ä­üÿÿÿÿ8Œò˜ı÷1
+X	java:S125"<This block of commented-out lines of code should be removed.(©íá8õú³ı÷1
+d
+java:S1128"BRemove this unused import 'net.serenitybdd.core.pages.PageObject'.(’•Ì›úÿÿÿÿ8öú³ı÷1
+P
+java:S1128"3Remove this unused import 'org.openqa.selenium.By'.(ÿŠŞ›8öú³ı÷1
+W
+java:S1128":Remove this unused import 'org.openqa.selenium.WebDriver'.(ñšÿÀ8öú³ı÷1

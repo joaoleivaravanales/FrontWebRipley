@@ -5,7 +5,7 @@ import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ripleyHome{
+public class ripleyHome extends PageObject{
 
     @FindBy(xpath="//*[@id=\"ripley-sticky-header\"]")
     protected static WebElement tituloRipley;

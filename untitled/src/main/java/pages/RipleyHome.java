@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class RipleyHome {
 
     WebDriver driver;
+    Utilidades utilidades = new Utilidades();
 
     private static final Logger logger = LoggerFactory.getLogger(RipleyHome.class);
     public RipleyHome(WebDriver driver) {
@@ -47,9 +48,9 @@ public class RipleyHome {
     }
     public void credencialesAcceso(String arg0, String arg1){
         try{
-            highlightElement(driver, usuarioLogin);
+            utilidades.highlightElement(driver, usuarioLogin);
             usuarioLogin.sendKeys(arg0);
-            highlightElement(driver, passwordLogin);
+            utilidades.highlightElement(driver, passwordLogin);
             passwordLogin.sendKeys(arg1);
         }catch (Exception e){
             logger.error("************************ ERROR AL MOMENTO DE INGRESAR CREDENCIALES ************************");
@@ -59,7 +60,7 @@ public class RipleyHome {
 
     public void ingresarClick() {
         try {
-            highlightElement(driver, clicLogin);
+            utilidades.highlightElement(driver, clicLogin);
             clicLogin.click();
         }catch (Exception e){
             logger.error("************************ ERROR AL PRESIONAR EL BOTON DE INICIAR SESION HOME ************************");
@@ -71,7 +72,7 @@ public class RipleyHome {
             case "Iniciar Sesion":
                 try{
                     driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-                    highlightElement(driver, btnIniciarSesion);
+                    utilidades.highlightElement(driver, btnIniciarSesion);
                     btnIniciarSesion.click();
                     driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
                     break;
@@ -94,6 +95,7 @@ public class RipleyHome {
 
     public void ingresoRutOlvidoPass(String arg0){
         try{
+            utilidades.highlightElement(driver, usuarioLogin);
             usuarioLogin.sendKeys(arg0);
         }catch (Exception e){
             logger.error("************************ ERROR AL INGRESAR EL RUT DEL CLIENTE ************************");
@@ -113,6 +115,7 @@ public class RipleyHome {
                 }
             case "Recuperar cuenta":
                 try {
+                    utilidades.highlightElement(driver, txtRecuperarCuenta);
                     Assert.assertEquals("Recuperar cuenta",txtRecuperarCuenta.getText());
                     break;
                 }catch (Exception e){
@@ -122,12 +125,5 @@ public class RipleyHome {
             default:
                 logger.error("************************ERROR EN EL METODO VISUALIZACIONESTEXT()************************ ");
         }
-    }
-
-    //metodo para enfocar elementos en un recuadro verde
-    public static void highlightElement(WebDriver driver, WebElement element) {
-        ((JavascriptExecutor) driver).executeScript(
-                "arguments[0].style.border='5px solid #00FF00';" +
-                        "arguments[0].style.transform = 'scale(1.3)';", element);
     }
 }

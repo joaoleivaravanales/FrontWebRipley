@@ -1,9 +1,23 @@
 
+L
+java:S2440"*Remove this instantiation of "Utilidades".(İ‚öşşÿÿÿÿ8°Ó˜¿ø1
+R
+java:S22093"5Change this instance-reference to a static reference.(ÚÄà8ÂÓ˜¿ø1
+W
+java:S22095"5Change this instance-reference to a static reference.(ÈÄ¨úÿÿÿÿ8ÄÓ˜¿ø1
+R
+java:S2209?"5Change this instance-reference to a static reference.(îÀ¤Š8ÈÓ˜¿ø1
 X
-java:S1874I"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8ÆªÅ¨ø1
+java:S1874J"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8â‡¿ø1
+W
+java:S2209K"5Change this instance-reference to a static reference.(ÏËõ‰ÿÿÿÿÿ8ÏÓ˜¿ø1
 X
-java:S1874L"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8í¡Î¨ø1
+java:S1874M"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8’â‡¿ø1
+R
+java:S2209b"5Change this instance-reference to a static reference.(ÚÄà8ÜÓ˜¿ø1
 X
-java:S1874k"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8ò¡Î¨ø1
+java:S1874m"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8£â‡¿ø1
+W
+java:S2209v"5Change this instance-reference to a static reference.(›Šàÿüÿÿÿÿ8µéš¿ø1
 H
-java:S5960l"+Remove this assertion from production code.(‘ˆ ç8ÉªÅ¨ø1
+java:S5960n"+Remove this assertion from production code.(‘ˆ ç8­â‡¿ø1

@@ -1,6 +1,5 @@
 package pages;
 
-import org.junit.After;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
@@ -35,6 +34,11 @@ public class RipleyHome {
     @FindBy(xpath = "//span[contains(text(),'El usuario ingresado no está registrado en Ripley.')]")
     WebElement msgIncorrectLogin;
 
+    @FindBy(xpath = "//*[contains(text(),'¿Olvidaste tu contraseña?')]")
+    WebElement btnOlvidasteContrasena;
+
+    @FindBy(xpath = "//p[contains(text(),'Recuperar cuenta')]")
+    WebElement txtRecuperarCuenta;
 
     public void ingresar(){
         System.setProperty("webdriver.chrome.driver", "C:/Users/Jooao/Desktop/Joao/Front automatizacion web/untitled/src/main/resources/drivers/chromedriver.exe");
@@ -67,10 +71,26 @@ public class RipleyHome {
                     break;
                 }catch (Exception e){
                     logger.error("************************ ERROR AL PRESIONAR EL BOTON DE INICIAR SESION CREDENCIALES ************************");
+                    break;
                 }
-            case "hola":
-                logger.info("ee");
-                break;
+            case "Olvidaste Contrasena":
+                try{
+                    btnOlvidasteContrasena.click();
+                    break;
+                }catch (Exception e){
+                    logger.error("************************ ERROR AL PRESIONAR EL BOTON DE OLVIDAR TU PASSWORD ************************");
+                    break;
+                }
+            default:
+                logger.error("************************ERROR EN EL METODO************************ ");
+        }
+    }
+
+    public void ingresoRutOlvidoPass(String arg0){
+        try{
+            usuarioLogin.sendKeys(arg0);
+        }catch (Exception e){
+            logger.error("************************ ERROR AL INGRESAR EL RUT DEL CLIENTE ************************");
         }
     }
 
@@ -83,7 +103,18 @@ public class RipleyHome {
                     break;
                 }catch (Exception e){
                     logger.error("************************ ERROR EL TEXTO NO COINCIDE ************************");
+                    break;
                 }
+            case "Recuperar cuenta":
+                try {
+                    Assert.assertEquals("Recuperar cuenta",txtRecuperarCuenta.getText());
+                    break;
+                }catch (Exception e){
+                    logger.error("************************ ERROR EL TEXTO NO COINCIDE ************************");
+                    break;
+                }
+            default:
+                logger.error("************************ERROR EN EL METODO VISUALIZACIONESTEXT()************************ ");
         }
     }
     @AfterTest

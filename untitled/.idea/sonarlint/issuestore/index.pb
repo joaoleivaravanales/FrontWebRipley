@@ -15,3 +15,5 @@ X
 (src/main/java/Utilities/TestContext.java,1\2\12b24a52834957a78b65a3e6932617542a8f7eb2
 S
 #src/main/java/pages/RipleyHome.java,8\e\8ef79ec27fd93a7fc3bfe11416852a1746a099b6
+R
+"src/main/java/step/StepRipley.java,e\a\ea2306719b7d6994ad88273306bf880ced1304c6

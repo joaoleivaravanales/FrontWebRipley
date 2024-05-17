@@ -1,6 +1,6 @@
 @Prueba1Web
 Feature: Ingreso a la pagina Ripley
-  Scenario Outline: Login Pagina Ripley WEB
+  Scenario Outline: Login Incorrecto a la Pagina Ripley WEB
     Given Cuando ingreso a la pagina de Ripley
     When Valido que efectivamente me encuentro en el menu de ripley
     And Ingreso correo "<correo>" contrasena en el campo "<password>" en la pagina login

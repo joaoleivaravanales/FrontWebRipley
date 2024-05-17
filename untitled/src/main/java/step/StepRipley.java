@@ -4,18 +4,12 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.After;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
 import pages.RipleyHome;
 
-import java.sql.Driver;
 
-
-public class stepRipley {
+public class StepRipley {
 
     WebDriver driver = new ChromeDriver();
     RipleyHome ripley = new RipleyHome(driver);
@@ -42,5 +36,20 @@ public class stepRipley {
     @Then("Verifico el siguiente texto de error en el login")
     public void verificoElSiguienteTextoDeErrorEnElLogin(String arg0) {
         ripley.visualizacionesTexto(arg0);
+    }
+
+    @And("Presiono el boton de {string} en la pantalla del login")
+    public void presionoElBotonDeEnLaPantallaDelLogin(String arg0) {
+        ripley.botonesPaginaRipley(arg0);
+    }
+
+    @And("Valido que me encuentro en la pantalla de {string}")
+    public void validoQueMeEncuentroEnLaPantallaDe(String arg0) {
+        ripley.visualizacionesTexto(arg0);
+    }
+
+    @And("Ingreso el {string} en la pantalla de recuperar cuenta")
+    public void ingresoElEnLaPantallaDeRecuperarCuenta(String arg0) {
+        ripley.ingresoRutOlvidoPass(arg0);
     }
 }

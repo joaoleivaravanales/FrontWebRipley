@@ -6,13 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.annotations.AfterTest;
 
 import java.util.concurrent.TimeUnit;
 
 public class RipleyHome {
 
     WebDriver driver;
+
     private static final Logger logger = LoggerFactory.getLogger(RipleyHome.class);
     public RipleyHome(WebDriver driver) {
         this.driver = driver;
@@ -47,7 +47,9 @@ public class RipleyHome {
     }
     public void credencialesAcceso(String arg0, String arg1){
         try{
+            highlightElement(driver, usuarioLogin);
             usuarioLogin.sendKeys(arg0);
+            highlightElement(driver, passwordLogin);
             passwordLogin.sendKeys(arg1);
         }catch (Exception e){
             logger.error("************************ ERROR AL MOMENTO DE INGRESAR CREDENCIALES ************************");
@@ -57,6 +59,7 @@ public class RipleyHome {
 
     public void ingresarClick() {
         try {
+            highlightElement(driver, clicLogin);
             clicLogin.click();
         }catch (Exception e){
             logger.error("************************ ERROR AL PRESIONAR EL BOTON DE INICIAR SESION HOME ************************");
@@ -67,7 +70,10 @@ public class RipleyHome {
         switch (arg0){
             case "Iniciar Sesion":
                 try{
+                    driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+                    highlightElement(driver, btnIniciarSesion);
                     btnIniciarSesion.click();
+                    driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
                     break;
                 }catch (Exception e){
                     logger.error("************************ ERROR AL PRESIONAR EL BOTON DE INICIAR SESION CREDENCIALES ************************");
@@ -117,8 +123,11 @@ public class RipleyHome {
                 logger.error("************************ERROR EN EL METODO VISUALIZACIONESTEXT()************************ ");
         }
     }
-    @AfterTest
-    public void closeAfter(){
-        driver.close();
+
+    //metodo para enfocar elementos en un recuadro verde
+    public static void highlightElement(WebDriver driver, WebElement element) {
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].style.border='5px solid #00FF00';" +
+                        "arguments[0].style.transform = 'scale(1.3)';", element);
     }
 }

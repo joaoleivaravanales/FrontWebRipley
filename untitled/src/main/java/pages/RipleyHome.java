@@ -98,7 +98,7 @@ public class RipleyHome {
             utilidades.highlightElement(driver, usuarioLogin);
             usuarioLogin.sendKeys(arg0);
         }catch (Exception e){
-            logger.error("************************ ERROR AL INGRESAR EL RUT DEL CLIENTE ************************");
+            logger.error("*********************** ERROR AL INGRESAR EL RUT DEL CLIENTE ************************");
         }
     }
 

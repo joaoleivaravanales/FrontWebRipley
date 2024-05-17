@@ -1,13 +1,16 @@
 
 m
-java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(¯Ë•Âøÿÿÿÿ8í×¼–ø1
-n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Œ¾Ý¯ùÿÿÿÿ8ï×¼–ø1
-C	java:S131""Add a default case to this switch.(¯Ë•Âøÿÿÿÿ8‡Ø¼–ø1
-G	java:S106"+Replace this use of System.out by a logger.(ôáÚä8ŠØ¼–ø1
-]	java:S125"<This block of commented-out lines of code should be removed.(Ó¾ä­üÿÿÿÿ8Ø¼–ø1
-X	java:S125"<This block of commented-out lines of code should be removed.(©íá8Ø¼–ø1
-X	java:S125"<This block of commented-out lines of code should be removed.(ò¦‚Ð8‘Ø¼–ø1
-d
-java:S1128"BRemove this unused import 'net.serenitybdd.core.pages.PageObject'.(’•Ì›úÿÿÿÿ8¿íÐ–ø1
-`
-java:S1128"CRemove this unused import 'net.serenitybdd.core.pages.PageObjects'.(„¦‡Ê8ŸÊ–ø1
+java:S1301;"KReplace this "switch" statement by "if" statements to increase readability.(¯Ë•Âøÿÿÿÿ8œ™…¥ø1
+m
+java:S1301J"KReplace this "switch" statement by "if" statements to increase readability.(¯Ë•Âøÿÿÿÿ8œ™…¥ø1
+m	java:S128<"LEnd this switch case with an unconditional break, return or throw statement.(ý¨Æüÿÿÿÿ8½™…¥ø1
+C	java:S131;""Add a default case to this switch.(¯Ë•Âøÿÿÿÿ8½™…¥ø1
+C	java:S131J""Add a default case to this switch.(¯Ë•Âøÿÿÿÿ8À™…¥ø1
+{
+java:S2142P"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8ø®Á¥ø1
+„
+java:S2273M"bMove this call to "wait()" into a synchronized block to be sure the monitor on "Timeouts" is held.(ŠÃ¸÷þÿÿÿÿ8ú®Á¥ø1
+\
+java:S2274M":Remove this call to "wait" or move it into a "while" loop.(ŠÃ¸÷þÿÿÿÿ8ú®Á¥ø1
+H
+java:S5960N"+Remove this assertion from production code.(‘ˆ ç8ü®Á¥ø1

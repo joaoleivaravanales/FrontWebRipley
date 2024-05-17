@@ -1,4 +1,10 @@
 
-n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ëÎÉåøÿÿÿÿ8ÄÅ÷•ø1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ëÎÉåøÿÿÿÿ8åšíø1
+d
+java:S2094"BRemove this empty class, write its code or make it an "interface".(ëÎÉåøÿÿÿÿ8â½¿Ÿø1
 Q
-java:S1128"4Remove this unused import 'io.cucumber.java.Before'.(£½”Ü8üÅ÷•ø1
+java:S1128"4Remove this unused import 'io.cucumber.java.Before'.(£½”Ü8ı®„Ÿø1
+W
+java:S1128":Remove this unused import 'org.openqa.selenium.WebDriver'.(ñšÿÀ8ç½¿Ÿø1
+`
+java:S1128"DRemove this unused import 'org.openqa.selenium.chrome.ChromeDriver'.(†È8ç½¿Ÿø1

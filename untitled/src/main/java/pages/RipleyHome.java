@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.annotations.AfterTest;
 
 import java.util.concurrent.TimeUnit;
 
@@ -40,6 +41,15 @@ public class RipleyHome {
 
     @FindBy(xpath = "//p[contains(text(),'Recuperar cuenta')]")
     WebElement txtRecuperarCuenta;
+
+    @FindBy(xpath = "//button[contains(text(),'Buscar cuenta')]")
+    WebElement btnBuscarCuenta;
+
+    @FindBy(xpath = "//span[contains(text(),'No se ha podido enviar el correo')]")
+    WebElement txtUserInexistente;
+
+    @FindBy(xpath = "//p[contains(text(),'Enviamos un enlace para que puedas recuperar tu cuenta a')]")
+    WebElement txtUsuarioExistenteOlvidarPass;
 
     public void ingresar(){
         System.setProperty("webdriver.chrome.driver", "C:/Users/Jooao/Desktop/Joao/Front automatizacion web/untitled/src/main/resources/drivers/chromedriver.exe");
@@ -88,6 +98,17 @@ public class RipleyHome {
                     logger.error("************************ ERROR AL PRESIONAR EL BOTON DE OLVIDAR TU PASSWORD ************************");
                     break;
                 }
+            case "Buscar Cuenta":
+                try{
+                    driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+                    utilidades.highlightElement(driver, btnBuscarCuenta);
+                    btnBuscarCuenta.click();
+                    driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+                    break;
+                }catch (Exception e){
+                    logger.error("************************ ERROR AL PRESIONAR EL BOTON DE BUSCAR CUENTA ************************");
+                    break;
+                }
             default:
                 logger.error("************************ERROR EN EL METODO************************ ");
         }
@@ -122,8 +143,33 @@ public class RipleyHome {
                     logger.error("************************ ERROR EL TEXTO NO COINCIDE ************************");
                     break;
                 }
+            case "No se ha podido enviar el correo":
+                try {
+                    driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+                    Assert.assertEquals("No se ha podido enviar el correo",txtUserInexistente.getText());
+                   driver.quit();
+                    break;
+                }catch (Exception e){
+                    logger.error("************************ ERROR EL TEXTO NO COINCIDE ************************");
+                    break;
+                }
+            case "Enviamos un enlace para que puedas recuperar tu cuenta a":
+                try{
+                    driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+                    Assert.assertEquals("Enviamos un enlace para que puedas recuperar tu cuenta a",txtUsuarioExistenteOlvidarPass.getText());
+                    driver.quit();
+                    break;
+                }catch (Exception e){
+                    logger.error("************************ ERROR EL TEXTO NO COINCIDE ************************");
+                    break;
+                }
             default:
                 logger.error("************************ERROR EN EL METODO VISUALIZACIONESTEXT()************************ ");
         }
+    }
+
+    @AfterTest
+    public void cerrarPestaña(){
+        driver.quit();
     }
 }

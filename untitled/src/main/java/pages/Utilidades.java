@@ -1,5 +1,7 @@
 package pages;
 
+import net.serenitybdd.core.Serenity;
+import org.junit.After;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,4 +14,5 @@ public class Utilidades {
                 "arguments[0].style.border='5px solid #00FF00';" +
                         "arguments[0].style.transform = 'scale(1.3)';", element);
     }
+
 }

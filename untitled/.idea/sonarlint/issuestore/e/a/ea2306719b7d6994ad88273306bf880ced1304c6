@@ -1,11 +1,13 @@
 
 L
-java:S2440"*Remove this instantiation of "Utilidades".(İ‚öşşÿÿÿÿ8®ŞÌø1
+java:S2440"*Remove this instantiation of "Utilidades".(İ‚öşşÿÿÿÿ8êŸõø1
 b
-java:S1128"@Remove this unused import 'com.itextpdf.text.DocumentException'.(œûœıÿÿÿÿ8„¬ÉÏø1
+java:S1128"@Remove this unused import 'com.itextpdf.text.DocumentException'.(œûœıÿÿÿÿ8³êŸõø1
 W
-java:S1128":Remove this unused import 'net.serenitybdd.core.Serenity'.(©°Ñµ8ı¢Ìø1
+java:S1128":Remove this unused import 'net.serenitybdd.core.Serenity'.(©°Ñµ8³êŸõø1
 I
-java:S1128	",Remove this unused import 'org.junit.After'.(«ñÖ«8ş¢Ìø1
+java:S1128	",Remove this unused import 'org.junit.After'.(«ñÖ«8³êŸõø1
 R
-java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8…¬ÉÏø1
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8³êŸõø1
+W
+java:S1128":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş8´±öø1

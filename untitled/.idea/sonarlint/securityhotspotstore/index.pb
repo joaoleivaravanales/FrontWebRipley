@@ -13,9 +13,3 @@ R
 "src/main/java/step/StepRipley.java,e\a\ea2306719b7d6994ad88273306bf880ced1304c6
 S
 #src/main/java/pages/Utilidades.java,9\f\9fb1569b739dd862f647cedc0d3c315b83c01094
-[
-+src/main/java/pages/HtmlToPdfConverter.java,2\2\22b96feac0d4f6350cb42e3b5f2b6c6716c7803d
-Q
-!src/main/java/pages/Imprimir.java,a\2\a242864ae1cbdb63edb68c80f29fd5fab9b0369c
-[
-+src/main/java/pages/PdfWithScreenshots.java,4\0\402dd8e4ae14bcc79cb48a51e3b444c5313484aa

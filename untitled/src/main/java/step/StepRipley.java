@@ -13,6 +13,7 @@ import pages.RipleyHome;
 import pages.Utilidades;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 
 public class StepRipley {
@@ -72,6 +73,41 @@ public class StepRipley {
 
     @Then("Valido que el cliente efectivamente exista y se despliega el siguiente mensaje")
     public void validoQueElClienteEfectivamenteExistaYSeDespliegaElSiguienteMensaje(String arg0) {
+        ripley.visualizacionesTexto(arg0);
+    }
+
+    @When("Valido que efectivamente me encuentro en la pagina principal de ripley")
+    public void validoQueEfectivamenteMeEncuentroEnLaPaginaPrincipalDeRipley() {
+        ripley.existePlaceholder();
+    }
+
+    @And("Ingreso el producto que deseo buscar en la barra principal {string}")
+    public void ingresoElProductoQueDeseoBuscarEnLaBarraPrincipal(String arg0) {
+        ripley.visualizacionesTexto(arg0);
+    }
+
+    @And("Selecciono el segundo elemento de la lista en la busqueda principal")
+    public void seleccionoElSegundoElementoDeLaListaEnLaBusquedaPrincipal() {
+        ripley.seleccionSegundoElementoLista();
+    }
+
+    @And("Presiono el boton anadir {string}")
+    public void presionoElBotonAnadir(String arg0) {
+        ripley.botonesPaginaRipley(arg0);
+    }
+
+    @And("Presiono el carrito en la parte superior de la pagina")
+    public void presionoElCarritoEnLaParteSuperiorDeLaPagina() {
+        ripley.clickCarrito();
+    }
+
+    @And("Presiono el boton de {string}")
+    public void presionoElBotonDe(String arg0) {
+        ripley.botonesPaginaRipley(arg0);
+    }
+
+    @Then("Valido el boton de {string} en el resumen de la compra")
+    public void validoElBotonDeEnElResumenDeLaCompra(String arg0) {
         ripley.visualizacionesTexto(arg0);
     }
 }

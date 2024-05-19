@@ -26,4 +26,42 @@ public class Utilidades {
         elemento.click();
     }
 
+    public static void miniScrollDown(WebDriver driver, int pixels) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0, " + pixels + ");");
+    }
+
+    public static WebElement findElement(WebDriver driver, String locatorType, String locatorValue) {
+        By locator = null;
+        switch (locatorType.toLowerCase()) {
+            case "id":
+                locator = By.id(locatorValue);
+                break;
+            case "name":
+                locator = By.name(locatorValue);
+                break;
+            case "classname":
+                locator = By.className(locatorValue);
+                break;
+            case "tagname":
+                locator = By.tagName(locatorValue);
+                break;
+            case "linktext":
+                locator = By.linkText(locatorValue);
+                break;
+            case "partiallinktext":
+                locator = By.partialLinkText(locatorValue);
+                break;
+            case "xpath":
+                locator = By.xpath(locatorValue);
+                break;
+            case "cssselector":
+                locator = By.cssSelector(locatorValue);
+                break;
+            default:
+                System.out.println("Tipo de localizador no válido.");
+        }
+        return driver.findElement(locator);
+    }
+
 }

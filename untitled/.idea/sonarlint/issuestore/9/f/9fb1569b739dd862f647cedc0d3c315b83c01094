@@ -1,6 +1,7 @@
 
 V
 java:S1118":Add a private constructor to hide the implicit public one.(êº°F8ÎÃóöø1
+L	java:S106>"+Replace this use of System.out by a logger.(š­Óñûÿÿÿÿ8 Äõ—ù1
 W
 java:S1128":Remove this unused import 'net.serenitybdd.core.Serenity'.(©°Ñµ8ìü÷ø1
 I

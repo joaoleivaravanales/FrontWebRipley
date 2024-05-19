@@ -4,10 +4,13 @@ import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterTest;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class RipleyHome {
@@ -50,6 +53,27 @@ public class RipleyHome {
 
     @FindBy(xpath = "//p[contains(text(),'Enviamos un enlace para que puedas recuperar tu cuenta a')]")
     WebElement txtUsuarioExistenteOlvidarPass;
+
+    @FindBy(xpath = "//input[contains(@placeholder,'Buscar productos')]")
+    WebElement barraDeBusquedaRipley;
+
+    @FindBy(xpath = "//button[contains(text(),'Agregar al carro')]")
+    WebElement agregarAlCarrito;
+
+    @FindBy(xpath = "//*[@title='Carrito']")
+    WebElement carritoSuperior;
+
+    @FindBy(xpath = "//button[contains(text(),'Agregar al carro')]")
+    WebElement btnIrAlCarrito;
+
+    @FindBy(xpath = "//a[contains(text(), 'Ir al carro')]")
+    WebElement btnIrAlCarroMenu;
+
+    @FindBy(xpath = "//button[contains(text(), 'Continuar')]")
+    WebElement btnContinuarMenu;
+
+    @FindBy(xpath = "(//*[@class='catalog-product-item catalog-product-item__container undefined'])[2]")
+    WebElement segundoElemento;
 
     public void ingresar(){
         System.setProperty("webdriver.chrome.driver", "C:/Users/Jooao/Desktop/Joao/Front automatizacion web/untitled/src/main/resources/drivers/chromedriver.exe");
@@ -109,6 +133,25 @@ public class RipleyHome {
                     logger.error("************************ ERROR AL PRESIONAR EL BOTON DE BUSCAR CUENTA ************************");
                     break;
                 }
+            case "Agregar al carro":
+                try{
+                    WebElement elemento = new WebDriverWait(driver, Duration.ofSeconds(15))
+                            .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Agregar al carro')]")));
+                    elemento.click();
+                    break;
+                }catch (Exception e){
+                    logger.error("************************ ERROR AL AGREGAR AL CARRITO ************************");
+                    break;
+                }
+            case "Ir al carro":
+                try{
+                    Utilidades.highlightElement(driver, btnIrAlCarroMenu);
+                    btnIrAlCarroMenu.click();
+                    break;
+                }catch (Exception e){
+                    logger.error("************************ ERROR AL PRESIONAR IR AL CARRO ************************");
+                    break;
+                }
             default:
                 logger.error("************************ERROR EN EL METODO************************ ");
         }
@@ -163,13 +206,63 @@ public class RipleyHome {
                     logger.error("************************ ERROR EL TEXTO NO COINCIDE ************************");
                     break;
                 }
+            case "auto":
+                try{
+                    barraDeBusquedaRipley.sendKeys(arg0);
+                    barraDeBusquedaRipley.sendKeys(Keys.RETURN);
+                    break;
+                }catch (Exception e){
+                    logger.error("************************ ERROR EN LA BUSQUEDA DEL PRODUCTO ************************");
+                    break;
+                }
+            case "Continuar":
+                try{
+                    if(btnContinuarMenu.isDisplayed()){
+                        logger.info("OK");
+                    }
+                    break;
+                }catch (Exception e){
+                    logger.error("************************ ERROR EN LA BUSQUEDA DEL PRODUCTO ************************");
+                    break;
+                }
             default:
                 logger.error("************************ERROR EN EL METODO VISUALIZACIONESTEXT()************************ ");
         }
     }
 
+    public void existePlaceholder(){
+        try{
+            if(barraDeBusquedaRipley.isEnabled()){
+                Utilidades.highlightElement(driver, barraDeBusquedaRipley);
+                barraDeBusquedaRipley.click();
+            }
+        }catch(Exception e){
+            logger.error("************************ERROR EN EL METODO EXISTE PLACEHOLDER()************************ ");
+        }
+
+    }
+
     @AfterTest
     public void cerrarPestaña(){
         driver.quit();
+    }
+
+    public void seleccionSegundoElementoLista() {
+        try{
+            Utilidades.esperarElementoClickeable(driver, "(//*[@class='catalog-product-item catalog-product-item__container undefined'])[2]");
+            }catch (Exception e){
+           logger.error("************************ERROR NO EXISTE SEGUNDO ELEMENTO ************************ ");
+        }
+    }
+
+    public void clickCarrito() {
+        try{
+            if (carritoSuperior.isDisplayed()){
+                Utilidades.highlightElement(driver, carritoSuperior);
+                carritoSuperior.click();
+            }
+        }catch (Exception e){
+            logger.error("************************ERROR EN EL CARRITO ************************ ");
+        }
     }
 }

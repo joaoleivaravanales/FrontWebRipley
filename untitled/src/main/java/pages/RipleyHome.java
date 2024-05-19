@@ -135,7 +135,7 @@ public class RipleyHome {
                 }
             case "Agregar al carro":
                 try{
-                    WebElement elemento = new WebDriverWait(driver, Duration.ofSeconds(20))
+                    WebElement elemento = new WebDriverWait(driver, Duration.ofSeconds(15))
                             .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Agregar al carro')]")));
                     elemento.click();
                     break;

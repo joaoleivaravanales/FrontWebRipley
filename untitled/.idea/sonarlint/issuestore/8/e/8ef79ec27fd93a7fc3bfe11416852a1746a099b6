@@ -1,39 +1,39 @@
 
 ±
-java:S1192¸"Define a constant instead of duplicating this literal "************************ ERROR EL TEXTO NO COINCIDE ************************" 4 times.(ŒıÃ³ıÿÿÿÿ8‰¶…™ù1
+java:S1192¸"Define a constant instead of duplicating this literal "************************ ERROR EL TEXTO NO COINCIDE ************************" 4 times.(ŒıÃ³ıÿÿÿÿ8ƒ…°¾ú1
 L
-java:S2440"*Remove this instantiation of "Utilidades".(İ‚öşşÿÿÿÿ8ã¶…™ù1
+java:S2440"*Remove this instantiation of "Utilidades".(İ‚öşşÿÿÿÿ8é…°¾ú1
 R
-java:S2209V"5Change this instance-reference to a static reference.(ÚÄà8ï¶…™ù1
+java:S2209V"5Change this instance-reference to a static reference.(ÚÄà8÷…°¾ú1
 W
-java:S2209X"5Change this instance-reference to a static reference.(ÈÄ¨úÿÿÿÿ8ğ¶…™ù1
+java:S2209X"5Change this instance-reference to a static reference.(ÈÄ¨úÿÿÿÿ8ù…°¾ú1
 R
-java:S2209b"5Change this instance-reference to a static reference.(îÀ¤Š8ò¶…™ù1
+java:S2209b"5Change this instance-reference to a static reference.(îÀ¤Š8ü…°¾ú1
 X
-java:S1874n"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8ù¶…™ù1
+java:S1874n"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8ƒ†°¾ú1
 W
-java:S2209o"5Change this instance-reference to a static reference.(ÏËõ‰ÿÿÿÿÿ8ú¶…™ù1
+java:S2209o"5Change this instance-reference to a static reference.(ÏËõ‰ÿÿÿÿÿ8„†°¾ú1
 X
-java:S1874q"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8ü¶…™ù1
+java:S1874q"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8††°¾ú1
 Y
-java:S1874‚"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8ÿ¶…™ù1
+java:S1874‚"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8‰†°¾ú1
 S
-java:S2209ƒ"5Change this instance-reference to a static reference.(Ğ„´¢8ÿ¶…™ù1
+java:S2209ƒ"5Change this instance-reference to a static reference.(Ğ„´¢8Š†°¾ú1
 Y
-java:S1874…"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8‚·…™ù1
+java:S1874…"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8Œ†°¾ú1
 T
-java:S1874"6Remove this use of "implicitlyWait"; it is deprecated.(¢ĞÁí8„·…™ù1
-Y	java:S125"<This block of commented-out lines of code should be removed.(Ù®Èä8¨Óˆ™ù1
+java:S1874"6Remove this use of "implicitlyWait"; it is deprecated.(¢ĞÁí8†°¾ú1
+Y	java:S125"<This block of commented-out lines of code should be removed.(Ù®Èä8†°¾ú1
 T
-java:S1874“"6Remove this use of "implicitlyWait"; it is deprecated.(µ÷®8’·…™ù1
+java:S1874“"6Remove this use of "implicitlyWait"; it is deprecated.(µ÷®8–†°¾ú1
 S
-java:S2209©"5Change this instance-reference to a static reference.(ÚÄà8‹·…™ù1
+java:S2209©"5Change this instance-reference to a static reference.(ÚÄà8›†°¾ú1
 Y
-java:S1874´"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8˜·…™ù1
+java:S1874´"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8¢†°¾ú1
 Y
-java:S1874Æ"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8›·…™ù1
+java:S1874Æ"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8¨†°¾ú1
 Y
-java:S1874Ğ"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8À©¨™ù1
-p	java:S100ş"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’©¢ğıÿÿÿÿ8¢·…™ù1
+java:S1874Ğ"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8«†°¾ú1
+p	java:S100ş"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’©¢ğıÿÿÿÿ8´†°¾ú1
 I
-java:S5960µ"+Remove this assertion from production code.(‘ˆ ç8©·…™ù1
+java:S5960µ"+Remove this assertion from production code.(‘ˆ ç8»†°¾ú1

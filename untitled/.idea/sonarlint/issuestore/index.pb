@@ -13,3 +13,7 @@ R
 "src/main/java/step/StepRipley.java,e\a\ea2306719b7d6994ad88273306bf880ced1304c6
 S
 #src/main/java/pages/Utilidades.java,9\f\9fb1569b739dd862f647cedc0d3c315b83c01094
+I
+src/main/java/JenkinsFile,f\3\f319862b2fe758f24ab63bf04ea70c2f399ff1dc
+I
+src/main/java/Jenkinsfile,7\c\7c70f33f4cf47e43d70d4a141ee3166f83b4def4

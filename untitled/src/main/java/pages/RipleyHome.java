@@ -72,8 +72,9 @@ public class RipleyHome {
     @FindBy(xpath = "//button[contains(text(), 'Continuar')]")
     WebElement btnContinuarMenu;
 
-    @FindBy(xpath = "(//*[@class='catalog-product-item catalog-product-item__container undefined'])[2]")
-    WebElement segundoElemento;
+    @FindBy(xpath = "//button[@id='buy-button']")
+    WebElement agregarAlCarro;
+
 
     public void ingresar(){
         System.setProperty("webdriver.chrome.driver", "C:/Users/Jooao/Desktop/Joao/Front automatizacion web/untitled/src/main/resources/drivers/chromedriver.exe");
@@ -105,6 +106,7 @@ public class RipleyHome {
         switch (arg0){
             case "Iniciar Sesion":
                 try{
+
                     driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
                     utilidades.highlightElement(driver, btnIniciarSesion);
                     btnIniciarSesion.click();
@@ -120,6 +122,7 @@ public class RipleyHome {
                     break;
                 }catch (Exception e){
                     logger.error("************************ ERROR AL PRESIONAR EL BOTON DE OLVIDAR TU PASSWORD ************************");
+
                     break;
                 }
             case "Buscar Cuenta":
@@ -135,9 +138,13 @@ public class RipleyHome {
                 }
             case "Agregar al carro":
                 try{
-                    WebElement elemento = new WebDriverWait(driver, Duration.ofSeconds(15))
-                            .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Agregar al carro')]")));
+                    Utilidades.miniScrollDown(driver,250);
+                    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+                    //Utilidades.findElement(driver,"xpath","//button[@id='buy-button']");
+                    WebElement elemento = new WebDriverWait(driver, Duration.ofSeconds(5))
+                            .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='buy-button']")));
                     elemento.click();
+                    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     break;
                 }catch (Exception e){
                     logger.error("************************ ERROR AL AGREGAR AL CARRITO ************************");
@@ -179,7 +186,7 @@ public class RipleyHome {
                 }
             case "Recuperar cuenta":
                 try {
-                    utilidades.highlightElement(driver, txtRecuperarCuenta);
+                    Utilidades.highlightElement(driver, txtRecuperarCuenta);
                     Assert.assertEquals("Recuperar cuenta",txtRecuperarCuenta.getText());
                     break;
                 }catch (Exception e){
@@ -219,6 +226,7 @@ public class RipleyHome {
                 try{
                     if(btnContinuarMenu.isDisplayed()){
                         logger.info("OK");
+                        driver.quit();
                     }
                     break;
                 }catch (Exception e){

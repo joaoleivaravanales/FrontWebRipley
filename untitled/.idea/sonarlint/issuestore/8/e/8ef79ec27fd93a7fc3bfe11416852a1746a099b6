@@ -1,39 +1,49 @@
 
 ±
-java:S1192¸"Define a constant instead of duplicating this literal "************************ ERROR EL TEXTO NO COINCIDE ************************" 4 times.(ŒıÃ³ıÿÿÿÿ8ƒ…°¾ú1
+java:S1192Ç"Define a constant instead of duplicating this literal "************************ ERROR EL TEXTO NO COINCIDE ************************" 4 times.(ŒıÃ³ıÿÿÿÿ8ØÄÊÄú1
 L
-java:S2440"*Remove this instantiation of "Utilidades".(İ‚öşşÿÿÿÿ8é…°¾ú1
+java:S2440"*Remove this instantiation of "Utilidades".(İ‚öşşÿÿÿÿ8¥ÅÊÄú1
 R
-java:S2209V"5Change this instance-reference to a static reference.(ÚÄà8÷…°¾ú1
+java:S2209X"5Change this instance-reference to a static reference.(ÚÄà8¬ÅÊÄú1
 W
-java:S2209X"5Change this instance-reference to a static reference.(ÈÄ¨úÿÿÿÿ8ù…°¾ú1
+java:S2209Z"5Change this instance-reference to a static reference.(ÈÄ¨úÿÿÿÿ8¬ÅÊÄú1
 R
-java:S2209b"5Change this instance-reference to a static reference.(îÀ¤Š8ü…°¾ú1
+java:S2209d"5Change this instance-reference to a static reference.(îÀ¤Š8­ÅÊÄú1
 X
-java:S1874n"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8ƒ†°¾ú1
+java:S1874p"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8°ÅÊÄú1
 W
-java:S2209o"5Change this instance-reference to a static reference.(ÏËõ‰ÿÿÿÿÿ8„†°¾ú1
+java:S2209q"5Change this instance-reference to a static reference.(ÏËõ‰ÿÿÿÿÿ8±ÅÊÄú1
 X
-java:S1874q"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8††°¾ú1
+java:S1874s"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8±ÅÊÄú1
 Y
-java:S1874‚"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8‰†°¾ú1
+java:S1874„"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8³ÅÊÄú1
 S
-java:S2209ƒ"5Change this instance-reference to a static reference.(Ğ„´¢8Š†°¾ú1
+java:S2209…"5Change this instance-reference to a static reference.(Ğ„´¢8´ÅÊÄú1
 Y
-java:S1874…"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8Œ†°¾ú1
+java:S1874‡"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8µÅÊÄú1
 T
-java:S1874"6Remove this use of "implicitlyWait"; it is deprecated.(¢ĞÁí8†°¾ú1
-Y	java:S125"<This block of commented-out lines of code should be removed.(Ù®Èä8†°¾ú1
+java:S1874"6Remove this use of "implicitlyWait"; it is deprecated.(¢ĞÁí8·ÅÊÄú1
+Y	java:S125‘"<This block of commented-out lines of code should be removed.(Ù®Èä8¸ÅÊÄú1
 T
-java:S1874“"6Remove this use of "implicitlyWait"; it is deprecated.(µ÷®8–†°¾ú1
+java:S1874•"6Remove this use of "implicitlyWait"; it is deprecated.(µ÷®8»ÅÊÄú1
+T
+java:S1874"6Remove this use of "implicitlyWait"; it is deprecated.(¢ĞÁí8ÄÅÊÄú1
+T
+java:S1874Ÿ"6Remove this use of "implicitlyWait"; it is deprecated.(¢ĞÁí8ÈÅÊÄú1
 S
-java:S2209©"5Change this instance-reference to a static reference.(ÚÄà8›†°¾ú1
+java:S2209¸"5Change this instance-reference to a static reference.(ÚÄà8¿ÅÊÄú1
+u
+java:S3776¿"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(å•òˆúÿÿÿÿ8ÀÅÊÄú1
 Y
-java:S1874´"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8¢†°¾ú1
+java:S1874Ã"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8ÊÅÊÄú1
 Y
-java:S1874Æ"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8¨†°¾ú1
+java:S1874Õ"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8½ø—Åú1
 Y
-java:S1874Ğ"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8«†°¾ú1
-p	java:S100ş"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’©¢ğıÿÿÿÿ8´†°¾ú1
+java:S1874ß"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏşÿÿÿÿ8§–æÅú1
+p	java:S100Ÿ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’©¢ğıÿÿÿÿ8ÑÅÊÄú1
+T
+java:S1874®"6Remove this use of "implicitlyWait"; it is deprecated.(¢ĞÁí8€·çÅú1
+k	java:S100À"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì¾Ä±8ØÅÊÄú1
+^	java:S125Â"<This block of commented-out lines of code should be removed.(Ä¥¾èøÿÿÿÿ8ÚÅÊÄú1
 I
-java:S5960µ"+Remove this assertion from production code.(‘ˆ ç8»†°¾ú1
+java:S5960Ä"+Remove this assertion from production code.(‘ˆ ç8ÛÅÊÄú1

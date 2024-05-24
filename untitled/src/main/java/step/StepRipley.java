@@ -110,4 +110,19 @@ public class StepRipley {
     public void validoElBotonDeEnElResumenDeLaCompra(String arg0) {
         ripley.visualizacionesTexto(arg0);
     }
+
+    @And("Selecciono el primer elemento de la lista en la busqueda del producto")
+    public void seleccionoElPrimerElementoDeLaListaEnLaBusquedaDelProducto() {
+        ripley.seleccionarMonarch();
+    }
+
+    @And("Selecciono {string} en la polera seleccionada")
+    public void seleccionoEnLaPoleraSeleccionada(String arg0) {
+        ripley.botonesPaginaRipley(arg0);
+    }
+
+    @And("Selecciono el perfume versace de la lista en la busqueda del producto")
+    public void seleccionoElPerfumeVersaceDeLaListaEnLaBusquedaDelProducto() {
+        ripley.SeleccionoPerfume();
+    }
 }

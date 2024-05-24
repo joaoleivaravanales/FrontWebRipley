@@ -9,3 +9,5 @@ R
 Jenkinsfile,0\c\0c2c5c506cef0ed2d3ad2b7e45e97980b66f5520
 S
 #src/main/java/pages/RipleyHome.java,8\e\8ef79ec27fd93a7fc3bfe11416852a1746a099b6
+R
+"src/main/java/step/StepRipley.java,e\a\ea2306719b7d6994ad88273306bf880ced1304c6

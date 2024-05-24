@@ -88,7 +88,7 @@ public class RipleyHome {
             utilidades.highlightElement(driver, passwordLogin);
             passwordLogin.sendKeys(arg1);
         }catch (Exception e){
-            logger.error("************************ ERROR AL MOMENTO DE INGRESAR CREDENCIALES ************************");
+            logger.error("*********************** ERROR AL MOMENTO DE INGRESAR CREDENCIALES ************************");
         }
 
     }

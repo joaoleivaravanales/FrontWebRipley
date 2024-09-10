@@ -7,7 +7,7 @@ Feature: Ingreso a la pagina Ripley
     And presiono el boton de "Iniciar Sesion" posicionado en la pantalla de login
     Then Verifico el siguiente texto de error en el login
     """
-    El usuario ingresado no está registrado en Ripley.
+    El usuario o la contraseña son incorrectos.
     """
 
     Examples:

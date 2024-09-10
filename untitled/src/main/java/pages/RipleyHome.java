@@ -25,7 +25,7 @@ public class RipleyHome {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//*[@id='ripley-sticky-header']/section/nav/div/div[2]/div[1]/div/div/a/div/div/span")
+    @FindBy(xpath = "//*[contains(text(),'¡Hola!')]")
     WebElement clicLogin;
 
     @FindBy(name = "identifier")
@@ -37,7 +37,7 @@ public class RipleyHome {
     @FindBy(xpath = "//button[contains(text(),'Iniciar sesión')]")
     WebElement btnIniciarSesion;
 
-    @FindBy(xpath = "//span[contains(text(),'El usuario ingresado no está registrado en Ripley.')]")
+    @FindBy(xpath = "//p[contains(text(),'El usuario o la contraseña son incorrectos.')]")
     WebElement msgIncorrectLogin;
 
     @FindBy(xpath = "//*[contains(text(),'¿Olvidaste tu contraseña?')]")
@@ -55,7 +55,7 @@ public class RipleyHome {
     @FindBy(xpath = "//p[contains(text(),'Enviamos un enlace para que puedas recuperar tu cuenta a')]")
     WebElement txtUsuarioExistenteOlvidarPass;
 
-    @FindBy(xpath = "//input[contains(@placeholder,'Buscar productos')]")
+    @FindBy(xpath = "//input[contains(@placeholder,'Buscar Productos')]")
     WebElement barraDeBusquedaRipley;
 
     @FindBy(xpath = "//button[contains(text(),'Agregar al carro')]")
@@ -190,10 +190,10 @@ public class RipleyHome {
 
     public void visualizacionesTexto(String arg0) {
         switch (arg0) {
-            case "El usuario ingresado no está registrado en Ripley.":
+            case "El usuario o la contraseña son incorrectos.":
                 try {
                     driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-                    Assert.assertEquals("El usuario ingresado no está registrado en Ripley.", msgIncorrectLogin.getText());
+                    Assert.assertEquals("El usuario o la contraseña son incorrectos.", msgIncorrectLogin.getText());
                     break;
                 } catch (Exception e) {
                     logger.error("************************ ERROR EL TEXTO NO COINCIDE ************************");
@@ -291,6 +291,7 @@ public class RipleyHome {
     public void seleccionSegundoElementoLista() {
         try {
             Utilidades.esperarElementoClickeable(driver, "(//*[@class='catalog-product-item catalog-product-item__container undefined'])[2]");
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         } catch (Exception e) {
             logger.error("************************ERROR NO EXISTE SEGUNDO ELEMENTO ************************ ");
         }
